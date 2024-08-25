@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btnContainer">
+        <div class="form">
+          <p>Enter the details of the product</p>
+          <input type="text" name="" id="idText" placeholder="Enter the id" />
+          <input
+            type="text"
+            name=""
+            id="nameText"
+            placeholder="Enter the name"
+          />
+          <input
+            type="text"
+            name=""
+            id="priceText"
+            placeholder="Enter the price"
+          />
+          <button onclick="addProduct()">Add Product</button>
+        </div>
+
+        <button onclick="showProduct()">Show Product</button>
+      </div>
+      <div class="searchRelated">
+        <input type="text" id="searchBox" placeholder="Search by id" />
+        <button id="cancelSearch" onclick="searchProduct()">Enter</button>
+        <button id="cancelSearch" onclick="cancelProductSearch()">
+          Cancel
+        </button>
+      </div>
+      <table id="myTable">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </table>
+    </div>
+    <dialog id="dialogBox">
+      <p>This is a dialog box!</p>
+      <button id="closeDialogButton">Close</button>
+    </dialog>
+  </body>
+</html>
